@@ -69,6 +69,93 @@ footer h2{font:italic clamp(52px,9vw,120px)/.84 var(--serif);margin:0;letter-spa
 footer{padding:12vw 7vw;align-items:start;flex-direction:column}.gallery{grid-template-columns:1fr}.overlay{padding:8vw 6vw}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.marquee span{animation:none;padding-left:0}}
+
+/* EDITORIAL ART-DIRECTION PASS — inspired by the supplied magazine / moodboard references */
+:root{--paper:#f1f0ec;--ink:#181817;--red:#b7a94c;--line:#c9c6bd;--serif:'Playfair Display',Georgia,serif;--sans:'Space Grotesk',Arial,sans-serif;--mono:'DM Mono',monospace}
+body{background:#f1f0ec;color:#181817}
+body:before{opacity:.055}
+.top{height:44px;padding:0 3.5vw;border-bottom:1px solid #aaa79e;font-size:9px}
+.top b{color:#9a8b35}
+.hero{height:780px;min-height:680px;max-height:850px;background:#e8e7e2;padding:25px 3.5vw}
+.kicker{font-size:9px;letter-spacing:.16em}
+.hero-title{top:15%;left:4vw;font:700 clamp(74px,12vw,168px)/.78 var(--serif);letter-spacing:-.09em;color:#161615}
+.hero-title span{color:#a89b45;margin-left:10vw}
+.hero-title .outline{font:500 clamp(24px,4.1vw,58px)/1 var(--sans);letter-spacing:.12em;-webkit-text-stroke:0;color:#242421;margin:28px 0 0 2vw;transform:none}
+.photo{border:8px solid #f1f0ec;box-shadow:0 7px 25px #0002;filter:grayscale(.15) contrast(1.04)}
+.p1{width:25vw;height:48vh;right:13vw;top:19%;transform:rotate(2deg)}
+.p2{width:18vw;height:34vh;right:36vw;top:42%;transform:rotate(-3deg)}
+.p3{width:14vw;height:23vh;right:4vw;top:9%;transform:rotate(3deg)}
+.hero-copy{left:4vw;bottom:7%;width:210px;font-size:9px;letter-spacing:.06em}
+.hero-copy strong{color:#988a39}
+.circle{width:105px;height:105px;right:8vw;bottom:7%;border-color:#9e913f;color:#8e823b;font-size:8px}
+.arrow-note{color:#8f833e;font-size:18px;right:28vw}
+.sectionbar{padding:14px 3.5vw;border-color:#bdbab1;font-size:9px}
+.sectionbar strong{font-size:27px}
+.work-intro{padding:7vw 5vw 3vw;align-items:start}
+.work-intro h2{font:600 clamp(54px,8vw,104px)/.84 var(--serif);letter-spacing:-.075em}
+.work-intro p{max-width:300px;font-size:9px;line-height:1.8;letter-spacing:.08em}
+.collage{padding:2vw 5vw 10vw;grid-template-columns:repeat(12,minmax(0,1fr));gap:4.8vw 2.5vw;align-items:start}
+.card{cursor:pointer}
+.card:nth-child(1){grid-column:span 7;margin-top:0}
+.card:nth-child(2){grid-column:span 5;margin-top:10vw}
+.card:nth-child(3){grid-column:span 5;margin-top:0}
+.card:nth-child(4){grid-column:span 7;margin-top:8vw}
+.card:nth-child(5){grid-column:span 6;margin-top:0}
+.card:nth-child(6){grid-column:span 6;margin-top:7vw}
+.card-media,.card:nth-child(even) .card-media{background:transparent;border:0;padding:0;transform:none;overflow:visible}
+.card:hover .card-media{transform:none}
+.card-media>img{height:520px;max-height:58vw;object-fit:cover;border:7px solid #fff;filter:grayscale(.12) contrast(1.02)}
+.card:nth-child(2) .card-media>img,.card:nth-child(3) .card-media>img{height:390px}
+.card:nth-child(4) .card-media>img,.card:nth-child(5) .card-media>img,.card:nth-child(6) .card-media>img{height:440px}
+.card-collage{height:560px;max-height:62vw;background:#deddd7;border:1px solid #c9c6bd;overflow:hidden}
+.card-collage img{width:54%;height:72%;border:7px solid #f7f6f2;box-shadow:0 8px 24px #0002;filter:none}
+.card-collage img:nth-child(1){left:4%;top:5%;transform:rotate(-4deg)}
+.card-collage img:nth-child(2){right:3%;top:11%;transform:rotate(3deg)}
+.card-collage img:nth-child(3){left:21%;bottom:-7%;transform:rotate(-1deg)}
+.card-collage .collage-stamp{background:#b7a94c;color:#fff;right:3%;bottom:6%;font-size:8px;letter-spacing:.1em}
+.tape{width:82px;height:19px;background:#d9d2b6;left:43%;top:-8px;opacity:.8}
+.card-meta{margin:16px 0 9px;color:#948637;font-size:8px;letter-spacing:.13em}
+.card h3{font:600 clamp(27px,3.2vw,45px)/.98 var(--serif);letter-spacing:-.055em}
+.card p{font-size:8px;letter-spacing:.13em;color:#5e5c55}
+.card:hover .card-media img{filter:grayscale(0)}
+.marquee{border-color:#c4c1b8;color:#96893e;font-size:24px}
+.about{padding:9vw 9vw 11vw;gap:8vw}
+.about h2{font:600 clamp(50px,7vw,90px)/.88 var(--serif)}
+.eyebrow{color:#95883c}
+.about-copy{font-size:16px}
+.experience{border-color:#c8c4ba}
+.experience b{color:#95883c}
+footer{background:#e3e1da;color:#191918;border-top:1px solid #c4c1b8;padding:6vw 5vw 4vw}
+footer h2{font:600 clamp(55px,8vw,108px)/.82 var(--serif)}
+footer a{border-color:#a29442}
+footer .footlinks{font-size:9px}
+.overlay{background:#f0efeb;color:#191918;padding:5vw 6vw}
+.close{color:#191918}
+.overlay-top,.overlay-foot{color:#95883c}
+.overlay h2{font:600 clamp(48px,8vw,100px)/.9 var(--serif)}
+.overlay-desc{color:#55534d}
+.project-section h3{font:600 32px var(--serif);color:#92853d;border-color:#c9c6bd}
+.project-section p{color:#69665e}
+.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.gallery img{background:#e2e0da;border:6px solid #fff;max-height:82vh;object-fit:contain}
+@media(max-width:760px){
+.hero{height:740px;min-height:740px}
+.hero-title{top:22%;font-size:19vw}
+.hero-title .outline{font-size:8vw;letter-spacing:.07em}
+.p1{width:49vw;height:33vh;right:8vw;top:39%}
+.p2{width:32vw;height:22vh;right:52vw;top:55%}
+.p3{width:27vw;height:18vh;right:4vw;top:12%}
+.collage{grid-template-columns:1fr 1fr;gap:12vw 6vw;padding:6vw 6vw 15vw}
+.card:nth-child(1),.card:nth-child(4){grid-column:1/-1}
+.card:nth-child(2),.card:nth-child(3),.card:nth-child(5),.card:nth-child(6){grid-column:span 1;margin-top:0}
+.card:nth-child(3){width:auto;margin-left:0}
+.card-media>img,.card:nth-child(2) .card-media>img,.card:nth-child(3) .card-media>img,.card:nth-child(4) .card-media>img,.card:nth-child(5) .card-media>img,.card:nth-child(6) .card-media>img{height:280px;max-height:none}
+.card:nth-child(1) .card-collage,.card:nth-child(4) .card-collage{height:430px;max-height:none}
+.card h3{font-size:25px}
+.gallery{grid-template-columns:1fr}
+footer{background:#e3e1da}
+}
+
 </style>
 </head>
 <body>
@@ -82,8 +169,8 @@ footer{padding:12vw 7vw;align-items:start;flex-direction:column}.gallery{grid-te
 <div class="hero-copy">Fashion, character, image & <strong>instinct.</strong><br><br>Scroll. Get into it ↓</div>
 <div class="circle">STYLED<br>WITH INTENTION<br>✳ LA ✳</div><div class="arrow-note">clothes with a point of view.</div>
 </header>
-<div class="sectionbar" id="work"><strong>Selected work / visual archive</strong><span>01 — 06 / Select a story ↗</span></div>
-<section class="work-intro"><h2>The work.<br>The <span style="color:var(--red)">worlds.</span></h2><p>Celebrity, editorial, campaign, performance and independent fashion work. A working archive of images, ideas and collaborations.</p></section>
+<div class="sectionbar" id="work"><strong>Portfolio / visual index</strong><span>01 — 06 / Select a story ↗</span></div>
+<section class="work-intro"><h2>Fashion<br><span style="color:var(--red)">in context.</span></h2><p>An image-led archive of styling, editorial concepts, campaigns and visual research. A study in character, silhouette, texture and point of view.</p></section>
 <main class="collage">
 <article class="card" data-project="0"><div class="card-media"><i class="tape"></i><div class="card-collage"><img src="https://static.wixstatic.com/media/b5045c_42af65b6bf9047e29627c0f8224d0bda~mv2.jpg" alt="Sabrina Carpenter concert look"><img src="https://static.wixstatic.com/media/b5045c_36e5ad66b6514eb2a734181d6fc1cff5~mv2.jpg" alt="Sabrina Carpenter event look"><img src="https://static.wixstatic.com/media/b5045c_c88c5c8b7ae546cda152f076273c8c0c~mv2.jpg" alt="Sabrina Carpenter character styling look"><span class="collage-stamp">Talent archive / open ↗</span></div></div><div class="card-meta"><span>01 / Talent</span><span>↗</span></div><h3>Sabrina Carpenter</h3><p>Selected celebrity styling</p></article>
 <article class="card" data-project="1"><div class="card-media"><i class="tape"></i><img src="https://static.wixstatic.com/media/b5045c_6b1b5d8bedbc4b4dbfdcecfce2578a1e~mv2.jpeg" alt="Pink editorial styling"></div><div class="card-meta"><span>02 / Editorial</span><span>↗</span></div><h3>Worlds & characters</h3><p>Editorial styling · concept</p></article>
