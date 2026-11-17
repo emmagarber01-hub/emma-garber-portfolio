@@ -156,6 +156,79 @@ footer .footlinks{font-size:9px}
 footer{background:#e3e1da}
 }
 
+
+/* Editorial art direction — magazine spreads, image-led and intentionally composed */
+:root{--paper:#f1efe9;--ink:#171716;--red:#b6a83d;--line:#bdb9af}
+body{background:#f1efe9}
+body:before{opacity:.075}
+.top{height:46px;padding:0 3.2vw;font-size:9px;border-color:#77736b}
+.top b{color:#9a8e32}
+.hero{height:900px;max-height:none;min-height:780px;background:#e8e6e1;padding:28px 3.2vw}
+.kicker{font-size:9px;color:#55534d}
+.hero-title{top:17%;left:4vw;font:600 clamp(88px,15vw,210px)/.78 var(--serif);letter-spacing:-.095em;color:#191918}
+.hero-title span{color:#a99d36;margin-left:12vw}
+.hero-title .outline{font:clamp(32px,5.6vw,76px)/1 var(--display);letter-spacing:-.035em;-webkit-text-stroke:1px #222;margin:25px 0 0 5vw}
+.photo{border:7px solid #f1efe9;box-shadow:0 8px 24px #0002;filter:grayscale(.15) contrast(1.02)}
+.p1{width:26vw;height:49vh;right:13vw;top:20%;transform:rotate(2deg)}
+.p2{width:18vw;height:33vh;right:39vw;top:47%;transform:rotate(-3deg)}
+.p3{width:15vw;height:25vh;right:4vw;top:12%;transform:rotate(4deg)}
+.hero-copy{font:9px/1.7 var(--mono);width:175px;color:#4d4a42}
+.hero-copy strong{color:#988b2d}
+.circle{border-color:#a99d36;color:#8f842d}
+.arrow-note{color:#8f842d}
+.sectionbar{border-color:#77736b;padding:14px 3.2vw}
+.sectionbar strong{font-size:29px}
+.work-intro{padding:7vw 4vw 3vw;align-items:start}
+.work-intro h2{font:600 clamp(54px,8vw,110px)/.86 var(--serif);letter-spacing:-.075em}
+.work-intro p{max-width:230px;font-size:9px;color:#615e57}
+.collage{padding:2vw 4vw 10vw;grid-template-columns:repeat(12,minmax(0,1fr));gap:5vw 1.6vw;align-items:start}
+.card{grid-column:span 4}
+.card:nth-child(1){grid-column:span 7}
+.card:nth-child(2){grid-column:span 5;margin-top:13vw}
+.card:nth-child(3){grid-column:span 5;margin-top:0}
+.card:nth-child(4){grid-column:span 7;margin-top:10vw}
+.card:nth-child(5){grid-column:span 6;margin-top:0}
+.card:nth-child(6){grid-column:span 6;margin-top:9vw}
+.card-media{padding:0;border:0;background:transparent;box-shadow:none;overflow:visible;transform:none!important}
+.card-media img{height:clamp(300px,43vw,650px);border:8px solid #f8f7f3;box-shadow:0 4px 18px #0001;filter:none}
+.card:nth-child(2) .card-media img,.card:nth-child(3) .card-media img{height:clamp(280px,38vw,540px)}
+.card-collage{height:clamp(390px,53vw,720px);background:#d9d6ce;border:1px solid #c9c5bb;overflow:hidden}
+.card-collage img{width:54%;height:66%;border:6px solid #f8f7f3;box-shadow:0 5px 20px #0002}
+.card-collage img:nth-child(1){left:3%;top:4%;transform:rotate(-3deg)}
+.card-collage img:nth-child(2){right:3%;top:12%;transform:rotate(2deg)}
+.card-collage img:nth-child(3){left:21%;bottom:-4%;transform:rotate(-1deg)}
+.card-collage .collage-stamp{background:#b6a83d;color:#171716;font:9px var(--mono);letter-spacing:.05em}
+.card-meta{color:#8c812c;margin-top:17px;font-size:9px}
+.card h3{font:italic 600 clamp(27px,3.2vw,48px)/.95 var(--serif);letter-spacing:-.05em}
+.card p{color:#615e57;font-size:9px}
+.tape{background:#d9d0a6a8}
+.pullquote{border-color:#99948a}
+.about{background:#e8e6e1}
+.eyebrow{color:#8c812c}
+.experience b{color:#8c812c}
+.marquee{color:#8c812c;border-color:#99948a}
+footer{background:#1b1b19}
+footer a{border-color:#b6a83d}
+.overlay{background:#171716f7}
+.overlay-top,.overlay-foot{color:#c9bb5a}
+.project-section h3{color:#e8e4d8}
+.project-section p{color:#c8c1b7}
+.gallery{gap:14px}
+.gallery img{background:#292824;border:5px solid #f1efe9}
+@media(max-width:760px){
+.hero{height:780px;min-height:780px;padding:20px 4vw}
+.hero-title{top:22%;font-size:20vw}
+.p1{width:49vw;height:33vh;right:8vw;top:39%}
+.p2{width:32vw;height:22vh;right:52vw;top:55%}
+.p3{width:27vw;height:18vh;right:4vw;top:12%}
+.collage{grid-template-columns:1fr 1fr;gap:10vw 6vw;padding:5vw 7vw 15vw}
+.card,.card:nth-child(1),.card:nth-child(2),.card:nth-child(3),.card:nth-child(4),.card:nth-child(5),.card:nth-child(6){grid-column:auto;margin-top:0}
+.card:nth-child(1){grid-column:1/-1}
+.card:nth-child(3){grid-column:1/-1;width:86%;margin-left:7%}
+.card-media img,.card:nth-child(2) .card-media img,.card:nth-child(3) .card-media img{height:300px}
+.card-collage{height:390px}
+}
+
 </style>
 </head>
 <body>
